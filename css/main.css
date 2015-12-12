@@ -11,7 +11,7 @@ html, body{
 p, h1, h2, h3{
   color:#333;
 }
-h2{
+h1, h2{
   font-family: 'Bitter', serif;
   font-weight: 700;
   text-shadow: 0 1px 0 #fff;
@@ -77,11 +77,14 @@ div#center-text{
     color:#FDFDFD;
   }
   h1{
+    margin: 0px;
+    padding: 0px;
     font-size: 4em;
     font-weight: 700;
   }
   div.home-text{
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-style: italic;
     font-weight: 400;
   }
 
