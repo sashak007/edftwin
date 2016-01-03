@@ -4,44 +4,47 @@
     <title>Edwin Fuquen</title>
     <link rel='stylesheet' type='text/css' href='./css/main.css' />
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Bitter:700' rel='stylesheet' type='text/css'>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script type='text/javascript' src="./js/jquery.waypoints.min.js"></script>
+    <script type='text/javascript' src='./js/main.js'></script>
   </head>
   <body>
     <div id='body-container'>
       <div id='nav-container'>
         <nav>
-            <a href='#home'>Home</a>
-            <a href='#about'>About Me</a>
-            <a href='#work'>What I Do</a>
-            <a href='#blog'>Blog</a>
-            <a href='#contact'>Contact</a>
+            <div class='nav-menu' data-label='home'><a href='#home'>Home</a></div>
+            <div class='nav-menu' data-label='about'><a href='#about'>About Me</a></div>
+            <div class='nav-menu' data-label='work'><a href='#work'>What I Do</a></div>
+            <div class='nav-menu' data-label='blog'><a href='#blog'>Blog</a></div>
+            <div class='nav-menu' data-label='contact'><a href='#contact'>Contact</a></div>
         </nav>
       </div>
 
       <div class='container' id='home-container'>
         <section id='home'>
-
           <div id='center-text'>
-            <h1 class='home-text'>Edwin Fuquen</h1>
+            <a class='jump' href='home'><h1 class='home-text'>Edwin Fuquen</h1></a>
             <div class='home-text'>professional bio &amp; thoughts on technology</div>
           </div>
         </section>
-        <section id='home-shadow'></section>
         <!-- <div id='display-none'></div> -->
       </div>
+
       <div class='clear'></div>
+     
       <div class='container'>
         <section id='about'>
-          <h2>About</h2>
+          <a class='jump' href='about'><h2>About</h2></a>
           <div id='profile-pic'></div>
           <p>Cat ipsum dolor sit amet, hunt anything that moves or hopped up on goofballs hide when guests come over. Hide when guests come over intrigued by the shower, or stare at ceiling climb leg for stretch and use lap as chair. Hunt anything that moves flop over, leave dead animals as gifts for chase imaginary bugs, chase mice for stare at ceiling yet hopped up on goofballs.</p>
           <p>Cat ipsum dolor sit amet, hunt anything that moves or hopped up on goofballs hide when guests come over. Hide when guests come over intrigued by the shower, or stare at ceiling climb leg for stretch and use lap as chair. Hunt anything that moves flop over, leave dead animals as gifts for chase imaginary bugs, chase mice for stare at ceiling yet hopped up on goofballs.</p>
         </section>
       </div>
 
-      <div id='resume-bg'>
+      <div class='alt-bg'>
         <div class='work-container'>
           <section id='work'>
-            <h2>Experience</h2>
+            <a class='jump' href='work'><h2>Experience</h2></a>
 
             <div class='resume-content-wrapper'>
 
@@ -202,9 +205,34 @@
           </section>
         </div>
       </div>
-      <div class='container'>
+     
+      <div id='container'>
+        <section id='blog'>
+          <a class='jump' href='blog'><h2>Thoughts on Tech</h2></a>
+          <ul id='blog-posts'>
+            <li>
+              <h3><a class='blog-links' href=#>Blog Post 1</a></h3>
+              <span class='blog-dates'>January 2, 2016</span>
+            </li>
+            <li>
+              <h3><a class='blog-links' href=#>Blog Post 2</a></h3>
+              <span class='blog-dates'>Feburary 2, 2016</span>
+            </li>
+            <li>
+              <h3><a class='blog-links' href=#>Blog Post 3</a></h3>
+              <span class='blog-dates'>March 2, 2016</span>
+            </li>
+            <li>
+              <h3><a class='blog-links' href=#>Blog Post 4</a></h3>
+              <span class='blog-dates'>April 2, 2016</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class='container alt-bg'>
         <section id='contact'>
-          <h2>Get in Touch</h2>
+          <a class='jump' href='contact'><h2>Get in Touch</h2></a>
           <p>You can find me on the web</p>
           <a href='https://github.com/efuquen'><img class='contact-icons' src='./img/social/github-icon.png' /></a>
           <a href='https://www.linkedin.com/in/edftwin'><img class='contact-icons' src='./img/social/linkedin-icon.png' /></a>
