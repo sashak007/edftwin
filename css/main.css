@@ -152,7 +152,6 @@ section#about, section#blog{
 /** Work **/
 .alt-bg{
   width: 100%;
-  /*margin-top: 80px; works for desktop*/
   border: 1px solid #d4d4d4;
   background-color:#fafafa;
 }
